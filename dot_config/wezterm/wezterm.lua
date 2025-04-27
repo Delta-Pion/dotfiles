@@ -10,7 +10,7 @@ local config = wezterm.config_builder()
 --config.color_scheme = '3024 (dark) (terminal.sexy)'
 
 config.color_scheme = "Tomorrow Night Burns"
-config.font = wezterm.font("Iosevka Term SS04")
+config.font = wezterm.font("Iosevka SS04")
 config.font_size = 14.5
 config.default_prog = { "pwsh" }
 -- config.window_background_opacity = 0.7
