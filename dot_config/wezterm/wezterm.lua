@@ -11,7 +11,7 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Tomorrow Night Burns"
 config.font = wezterm.font("Iosevka SS04")
-config.font_size = 14
+config.font_size = 14.5
 config.default_prog = { "pwsh" }
 -- config.window_background_opacity = 0.7
 -- config.win32_system_backdrop = "Acrylic"
