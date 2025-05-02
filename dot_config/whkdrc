@@ -11,6 +11,7 @@ alt + shift + o         : komorebic reload-configuration
 # alt + b                 : if ($wshell.AppActivate('Chrome') -eq $False) { start chrome }
 
 alt + q                 : komorebic close
+ctrl + alt + q          : komorebic close
 alt + m                 : komorebic minimize
 
 # Focus windows
