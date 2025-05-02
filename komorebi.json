@@ -17,7 +17,7 @@
   "animation": {
     "enabled": true,
     "duration": 50,
-    "fps": 120,
+    "fps": 165,
     "style": "Linear"
   },
   "monitors": [
