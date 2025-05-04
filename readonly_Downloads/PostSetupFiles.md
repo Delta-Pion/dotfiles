@@ -23,7 +23,7 @@
 - Obsidian
 - Firefox
 
-# Development Environment : [Link To All Dotfiles](https://github.com/Delta-Pion/dotfiles) 
+# Development Environment : 
 
 - Wezterm
 - Powershell 7
