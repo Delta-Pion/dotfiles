@@ -4,14 +4,14 @@
 
 # Misc :
 
-
 - MAS for activation 
 - winlibs (gcc and stuff)
 - drivers (especially nvidia, intel and msi )
-- updates
+- *WinUtil* for all in one management 
 - Flow Launcher
 - Fastfetch
 - Asio4all
+- updates
 
 # General Apps :
 
