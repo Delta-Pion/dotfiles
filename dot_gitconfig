@@ -1,0 +1,9 @@
+[core]
+	editor = \"C:\\Users\\Aditya\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+
+[color "diff"]
+  new = "#23ff00"
+[color "status"]
+  added = yellow
+  changed = red
+  ahead = "#fcee0c"
