@@ -12,8 +12,8 @@ local config = wezterm.config_builder()
 --
 
 local neofusion_theme = {
-	foreground = "#e0d9c7",
-	background = "#070f1c",
+	foreground = "#00deff",
+	background = "#000000",
 	cursor_bg = "#e0d9c7",
 	cursor_border = "#e0d9c7",
 	cursor_fg = "#070f1c",
@@ -43,6 +43,9 @@ local neofusion_theme = {
 
 config.colors = neofusion_theme
 -- "#ea6847", -- Bright Cyan (original neofusino color for red)
+
+config.default_cursor_style = "BlinkingBlock"
+config.animation_fps = 1
 
 config.font = wezterm.font("Iosevka SS04")
 config.font_size = 14.5
