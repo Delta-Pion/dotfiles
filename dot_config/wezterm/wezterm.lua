@@ -22,7 +22,7 @@ local neofusion_theme = {
 	ansi = {
 		"#070f1c", -- Black (Host)
 		"#dd0000", -- Red (Syntax string)
-		"#dd0000", -- Green (Command)
+		"#ff5f1f", -- Green (Command) (This one changes the commit colors)
 		"#5db2f8", -- Yellow (Command second)
 		"#2f516c", -- Blue (Path)
 		"#d943a8", -- Magenta (Syntax var)
@@ -32,17 +32,17 @@ local neofusion_theme = {
 	brights = {
 		"#2f516c", -- Bright Black
 		"#d943a8", -- Bright Red (Command error)
-		"#dd0000", -- Bright Green (Exec)
+		"#ea6847", -- Bright Green (Exec) (changes headings)
 		"#dd0000", -- Bright Yellow
 		"#5db2f8", -- Bright Blue (Folder)
 		"#d943a8", -- Bright Magenta
-		"#dd0000", -- Bright Cyan
+		"#ea6847", -- Bright Cyan
 		"#e0d9c7", -- Bright White
 	},
 }
 
 config.colors = neofusion_theme
--- "#ea6847", -- Bright Cyan (original neofusino color for red)
+-- "#ea6847", -- Bright Cyan (original neofusino color for red(dd0000) and ff5f1f (neon orange))
 -- "#86dbf5", -- Cyan (Prompt)
 
 config.default_cursor_style = "BlinkingBlock"
