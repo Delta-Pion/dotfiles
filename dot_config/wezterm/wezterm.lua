@@ -33,7 +33,7 @@ local neofusion_theme = {
 		"#2f516c", -- Bright Black
 		"#d943a8", -- Bright Red (Command error)
 		"#dd0000", -- Bright Green (Exec)
-		"#86dbf5", -- Bright Yellow
+		"#dd0000", -- Bright Yellow
 		"#5db2f8", -- Bright Blue (Folder)
 		"#d943a8", -- Bright Magenta
 		"#dd0000", -- Bright Cyan
@@ -43,6 +43,7 @@ local neofusion_theme = {
 
 config.colors = neofusion_theme
 -- "#ea6847", -- Bright Cyan (original neofusino color for red)
+-- "#86dbf5", -- Cyan (Prompt)
 
 config.default_cursor_style = "BlinkingBlock"
 config.animation_fps = 1
