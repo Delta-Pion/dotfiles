@@ -45,8 +45,8 @@ config.colors = neofusion_theme
 -- "#ea6847", -- Bright Cyan (original neofusino color for red(dd0000) and ff5f1f (neon orange))
 -- "#86dbf5", -- Cyan (Prompt)
 
-config.default_cursor_style = "BlinkingBlock"
-config.animation_fps = 1
+-- config.default_cursor_style = "BlinkingBlock"
+-- config.animation_fps = 1
 
 config.font = wezterm.font("Iosevka SS04")
 config.font_size = 14.5
