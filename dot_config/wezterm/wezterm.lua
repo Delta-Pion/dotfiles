@@ -65,7 +65,7 @@ config.window_padding = {
 	left = 0,
 	right = 0,
 	top = 0,
-	--	bottom = 0,
+	bottom = 0,
 }
 
 ------------------------------- TAB BAR CONFIGURATION ----------------------------------
@@ -96,7 +96,7 @@ function tab_title(tab_info)
 end
 
 wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
-	local edge_background = "#0b0022"
+	local edge_background = "#000000"
 	local background = "#1b1032"
 	local foreground = "#808080"
 
