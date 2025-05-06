@@ -62,6 +62,6 @@ config.window_padding = {
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
-
+config.show_new_tab_button_in_tab_bar = false
 -- and finally, return the configuration to wezterm
 return config
