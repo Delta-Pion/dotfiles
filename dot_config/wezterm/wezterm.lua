@@ -11,6 +11,8 @@ local config = wezterm.config_builder()
 -- config.color_scheme = "Tomorrow Night Burns"
 --
 
+------------------------------- THEME CONFIGURATION ----------------------------------
+
 local neofusion_theme = {
 	foreground = "#00deff",
 	background = "#000000",
@@ -48,6 +50,8 @@ config.colors = neofusion_theme
 -- config.default_cursor_style = "BlinkingBlock"
 -- config.animation_fps = 1
 
+---------------------------------------- FONT CONFIGURATION -------------------------------------------
+
 config.font = wezterm.font("Iosevka SS04")
 config.font_size = 14.5
 config.default_prog = { "pwsh" }
@@ -59,9 +63,13 @@ config.window_padding = {
 	top = 0,
 	--	bottom = 0,
 }
+
+------------------------------- TAB BAR CONFIGURATION ----------------------------------
+
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
+
 -- and finally, return the configuration to wezterm
 return config
