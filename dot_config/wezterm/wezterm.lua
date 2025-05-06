@@ -41,6 +41,10 @@ local neofusion_theme = {
 		"#ea6847", -- Bright Cyan
 		"#e0d9c7", -- Bright White
 	},
+	tab_bar = {
+		inactive_tab_edge = "#de0000",
+		background = "#000000",
+	},
 }
 
 config.colors = neofusion_theme
@@ -70,6 +74,60 @@ config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
+config.window_frame = {
+	font = wezterm.font({ family = "SpaceMono Nerd Font" }),
+	active_titlebar_bg = "#000000",
+}
+config.tab_max_width = 20
+-- The filled in variant of the < symbol
+local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_flame_thick_mirrored .. " "
+-- The filled in variant of the > symbol
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_flame_thick .. " "
+
+function tab_title(tab_info)
+	local title = tab_info.tab_title
+	-- if the tab title is explicitly set, take that
+	if title and #title > 0 then
+		return title
+	end
+	-- Otherwise, use the title from the active pane
+	-- in that tab
+	return tab_info.active_pane.title
+end
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+	local edge_background = "#0b0022"
+	local background = "#1b1032"
+	local foreground = "#808080"
+
+	if tab.is_active then
+		background = "#de0000"
+		foreground = "#c0c0c0"
+	elseif hover then
+		background = "#3b3052"
+		foreground = "#909090"
+	end
+
+	local edge_foreground = background
+
+	local title = tab_title(tab)
+
+	-- ensure that the titles fit in the available space,
+	-- and that we have room for the edges.
+	title = wezterm.truncate_right(title, max_width - 2)
+
+	return {
+		{ Background = { Color = edge_background } },
+		{ Foreground = { Color = edge_foreground } },
+		{ Text = SOLID_LEFT_ARROW },
+		{ Background = { Color = background } },
+		{ Foreground = { Color = foreground } },
+		{ Text = title },
+		{ Background = { Color = edge_background } },
+		{ Foreground = { Color = edge_foreground } },
+		{ Text = SOLID_RIGHT_ARROW },
+	}
+end)
 
 -- and finally, return the configuration to wezterm
 return config
