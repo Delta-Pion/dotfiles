@@ -5,6 +5,7 @@
   "cross_monitor_move_behaviour": "Insert",
   "default_workspace_padding": 4,
   "default_container_padding": 4,
+  "window_handling_behaviour": "Async",
   "border": true,
   "border_width": 4,
   "border_offset": -1,
