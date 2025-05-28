@@ -10,6 +10,10 @@ local config = wezterm.config_builder()
 -- config.color_scheme = '3024 (dark) (terminal.sexy)'
 -- config.color_scheme = "Tomorrow Night Burns"
 --
+------------------------------- WINDOW CONFIGURATION ----------------------------------
+
+config.window_background_opacity = 0.7
+config.win32_system_backdrop = "Acrylic"
 
 ------------------------------- THEME CONFIGURATION ----------------------------------
 
